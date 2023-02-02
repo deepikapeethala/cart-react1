@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header{
+  padding: 20px 50px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: x-large;
+}
+.carticon .counter{
+  height: 18px;
+  width: 18px;
+  background-color: blue;
+  border-radius: 50%;
+  position: relative;
+  right: 7px;
+  top: -6px;
+}
+.carticon {
+  display: flex;
+}
+.icon{
+  position: relative;
+  right: 2px;
+  font-size: 16px;
+}
+
+img{
+  height:150px;
+}
+.cardwrapper{
+  display: inline-flex;
+  width: 320px;
+  box-shadow: 0px 0px 7px black;
+  border-radius: 5px;
+  
+}
+.imagewrapper{
+  width:180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-right: 1px solid rgb(168, 166, 166);
+}
+.content{
+  flex-grow: 1;
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.price{
+  margin-bottom: auto;
+}
+.content button{
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+}
+.quantity{
+  display: flex;
+  align-self: flex-end;
+  border-radius: 3px;
+  border: 1px solid grey;
+}
+.quantity div{
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.quantity>div:first-child, 
+.quantity>div:last-child{
+  background-color: black;
+  color: white;
+  border-radius: 0;
+}
+.quantity>button:disabled{
+  opacity: 0.7;
+}
+main{
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 80vh;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  
+}
+.total{
+  position: fixed;
+  background-color: grey;
+  padding: 17px;
+  padding-right: 30px;
+  bottom: 0;
+  width: 100px;
+  text-align: right;
+}
